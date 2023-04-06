@@ -3,10 +3,8 @@ import Button from "@mui/material/Button"
 import SellIcon from '@mui/icons-material/Sell';
 import { alpha } from "@mui/material";
 const InfoCard = (props) => {
-
-
     return (
-        <Card sx={{ minWidth: 275, backgroundColor: alpha("#ffebee", 0.8)}}>
+        <Card sx={{ minWidth: 275, minHeight: 300, backgroundColor: alpha("#ffebee", 0.8) }}>
             <CardContent>
                 <Typography sx={{ mb: 1.5 }} color="text.primary">
                     {props.name}
@@ -14,24 +12,26 @@ const InfoCard = (props) => {
                 <Typography variant="body2">
                     {props.description}
                 </Typography>
+                <br/>
+                <Typography variant="body2">
+                    {props.myRole}
+                </Typography>
             </CardContent>
 
-            <Grid container sx={{mb: 1.5, ml: 1.5}}>
-                {props.tags.map(x => 
-                        <Grid item xs={6} sx={{mb: 0.5}}>
-                        <Chip
-                            label={x}
-                            icon={<SellIcon />}
-                        />
-                    </Grid>
-                    )}
-            </Grid>
-                
-                
+
             <CardActions>
                 <Button size="small">View on Github</Button>
             </CardActions>
 
+            <div style={{ marginLeft: 2 }}>
+                {props.tags.map(x =>
+                    <Chip
+                        label={x}
+                        icon={<SellIcon />}
+                        sx={{ ml: 0.2, mb: 0.2 }}
+                    />
+                )}
+            </div>
         </Card>
     )
 }
