@@ -1,7 +1,7 @@
 import {Box, Button } from "@mui/material"
 const HeaderItemList = () =>
 {
-const pages = ['Products', 'Pricing', 'Blog'];
+    const pages = ['Products', 'Pricing', 'Blog'];
 
     return ( 
         
