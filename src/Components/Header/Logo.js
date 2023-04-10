@@ -1,11 +1,11 @@
 import AdbIcon from "@mui/icons-material/Adb"
 import { Typography } from "@mui/material";
-const Logo = () => 
-{
-    return (
-        <>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-            
+import { Link } from "react-router-dom";
+const Logo = () => {
+  return (
+    <Link to="/" style={{ textDecoration: "none" }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
         <Typography
           variant="h6"
           noWrap
@@ -23,8 +23,10 @@ const Logo = () =>
         >
           Mattias Smedman
         </Typography>
-        </>
-    )
+      </div>
+
+    </Link>
+  )
 }
 
 export default Logo;
