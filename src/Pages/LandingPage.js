@@ -35,7 +35,7 @@ const LandingPage = () => {
         {
             image: "https://media.tenor.com/f_saBHiUTz0AAAAC/cute-cat.gif",
             name: "Neon Lights (Current Project)",
-            description: "Traverse through the world in a fast paced platforming game. Neon Lights is a game all about precision and speed, as you ride alongside walls and have to jump between them with thought going into every jump.",
+            description: "Traverse through the world in a fast paced platforming game. Neon Lights is a game all about precision and speed, as you ride alongside walls and have to jump between them with thought going into every movement.",
             myRole: "This project is a solo project for me to familiarize myself more with Unreal Engine. As such, in this project I have worked on everything from the shaders, to the AI, to the level design and more.",
             tags: ['Unreal Engine 5', 'C++', 'Github', 'Shaders', 'Platforming', 'Fast Paced', "Level Design"],
             url: ""
