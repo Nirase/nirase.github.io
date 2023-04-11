@@ -8,7 +8,6 @@ const LandingPage = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleSlideChange = (index) => {
-        console.log("called", index);
         setCurrentIndex(index);
     };
 
