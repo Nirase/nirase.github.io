@@ -4,7 +4,7 @@ import SellIcon from '@mui/icons-material/Sell';
 import { alpha } from "@mui/material";
 const InfoCard = (props) => {
     return (
-        <Card sx={{ minWidth: 275, minHeight: 300, backgroundColor: alpha("#ffebee", 0.8) }}>
+        <Card sx={{ minWidth: "40vw", minHeight: "40vh", backgroundColor: alpha("#ffebee", 0.8) }}>
             <CardContent>
                 <Typography sx={{ mb: 1.5 }} color="text.primary">
                     {props.name}
